@@ -30,6 +30,15 @@ Certifique-se de ter o Node-RED instalado em seu ambiente. Se ainda não tiver, 
 - Baixe e utilize o código em Python disponível no repositório.
 
   ![pgniot](https://github.com/lucasbatista001/Projeto-IOT/assets/111438250/774296d5-572e-47a4-aaf2-6b187b3e1051)
+  
+## Conexão dos Fios:
+
+- **Fio Fase (Positivo):** Conecte este fio ao pino 3V3 do módulo ESP. Este pino fornece uma alimentação de 3.3 volts.
+
+- **Fio Neutro (Negativo):** Conecte este fio ao pino GND do módulo ESP. Este pino é o terra, a referência de potencial zero.
+
+- **Saída (Digital):** Conecte este fio ao pino D15 do módulo ESP. Este pino é uma saída digital e será utilizado para enviar sinais ou informações do seu projeto.
+
 
 ## Observações:
 
