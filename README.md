@@ -37,7 +37,7 @@ Certifique-se de ter o Node-RED instalado em seu ambiente. Se ainda não tiver, 
 
 - **Fio Neutro (Negativo):** Conecte este fio ao pino GND do módulo ESP. Este pino é o terra, a referência de potencial zero.
 
-- **Saída (Digital):** Conecte este fio ao pino D15 do módulo ESP. Este pino é uma saída digital e será utilizado para enviar sinais ou informações do seu projeto.
+- **Saída (Digital):** Conecte este fio ao pino D15 do módulo ESP. Este pino é uma saída digital e será utilizado para enviar sinais ou informações.
 
 
 ## Observações:
