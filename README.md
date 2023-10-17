@@ -26,6 +26,8 @@ Certifique-se de ter o Node-RED instalado em seu ambiente. Se ainda não tiver, 
   - Se o projeto não estiver mais disponível, utilize o Simulador ESP32 em [https://docs.wokwi.com/pt-BR/guides/esp32](https://docs.wokwi.com/pt-BR/guides/esp32) e o Referência do wokwi-pir-motion-sensor em [https://docs.wokwi.com/pt-BR/parts/wokwi-pir-motion-sensor](https://docs.wokwi.com/pt-BR/parts/wokwi-pir-motion-sensor).
 
 - Configure a conexão conforme mostrado na imagem fornecida.
+  
+- Baixe e utilize o código em Python disponível no repositório.
 
   ![pgniot](https://github.com/lucasbatista001/Projeto-IOT/assets/111438250/774296d5-572e-47a4-aaf2-6b187b3e1051)
 
@@ -35,4 +37,4 @@ Certifique-se de ter o Node-RED instalado em seu ambiente. Se ainda não tiver, 
 
 2. Para informações detalhadas sobre a configuração e personalização, consulte a documentação incluída neste repositório.
 
-3. Baixe e utilize o código em Python disponível no repositório.
+   
