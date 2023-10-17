@@ -46,4 +46,6 @@ Certifique-se de ter o Node-RED instalado em seu ambiente. Se ainda não tiver, 
 
 2. Para informações detalhadas sobre a configuração e personalização, consulte a documentação incluída neste repositório.
 
+3. Simulação deve ser feita no [https://wokwi.com/micropython](https://wokwi.com/micropython).
+
    
