@@ -13,7 +13,7 @@ Certifique-se de ter o Node-RED instalado em seu ambiente. Se ainda não tiver, 
 
 3. Clique no menu no canto superior direito.
 
-4. Selecione "Import" e, em seguida, "Clipboard".
+4. Selecione "Import".
 
 5. Cole o conteúdo do arquivo de fluxo e clique em "Import".
 
@@ -26,6 +26,8 @@ Certifique-se de ter o Node-RED instalado em seu ambiente. Se ainda não tiver, 
   - Se o projeto não estiver mais disponível, utilize o Simulador ESP32 em [https://docs.wokwi.com/pt-BR/guides/esp32](https://docs.wokwi.com/pt-BR/guides/esp32) e o Referência do wokwi-pir-motion-sensor em [https://docs.wokwi.com/pt-BR/parts/wokwi-pir-motion-sensor](https://docs.wokwi.com/pt-BR/parts/wokwi-pir-motion-sensor).
 
 - Configure a conexão conforme mostrado na imagem fornecida.
+
+  ![pgniot](https://github.com/lucasbatista001/Projeto-IOT/assets/111438250/774296d5-572e-47a4-aaf2-6b187b3e1051)
 
 ## Observações:
 
