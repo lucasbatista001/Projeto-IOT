@@ -1,7 +1,8 @@
 
-# Bem-vindo ao Projeto IoT com Node-RED e ESP32!
+# Projeto IoT com Node-RED e ESP32!
 
-Este repositório é dedicado à apresentação e execução de um projeto inovador de Internet das Coisas, desenvolvido utilizando as ferramentas Node-RED e ESP32.
+Bem-vindo 
+Este repositório é dedicado à apresentação de um projeto IoT desenvolvido com as ferramentas Node-RED e ESP32. O seu propósito principal é fornecer um guia claro e abrangente para a execução bem-sucedida deste projeto.
 
 ## Objetivo do Projeto:
 
@@ -12,14 +13,6 @@ Nosso principal objetivo é criar uma solução eficiente de IoT para a contagem
 - Consulte o README para obter instruções detalhadas sobre a configuração e execução do projeto.
 
 - Explore o código-fonte para compreender a implementação e personalização possíveis.
-
-- Fique à vontade para contribuir, fornecer feedback ou tirar dúvidas através das issues.
-
-## Observações Importantes:
-
-Este código está disponível para uso e modificação. Caso faça alterações, certifique-se de documentar as mudanças no README e seguir as diretrizes da licença.
-
-Agradecemos por explorar o Projeto IoT! Divirta-se experimentando e contribuindo para a evolução deste projeto.
 
 ### Instruções:
 
