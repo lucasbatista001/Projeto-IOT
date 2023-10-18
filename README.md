@@ -1,5 +1,20 @@
 
-# Projeto IoT com Node-RED
+# Projeto IoT com Node-RED e ESP32!
+
+Bem-vindo 
+Este repositório é dedicado à apresentação de um projeto IoT desenvolvido com as ferramentas Node-RED e ESP32. O seu propósito principal é fornecer um guia claro e abrangente para a execução bem-sucedida deste projeto.
+
+## Objetivo do Projeto:
+
+Nosso principal objetivo é criar uma solução eficiente de IoT para a contagem de pessoas, utilizando o microcontrolador ESP32. A integração do Node-RED e do sensor de movimento não apenas coleta dados, mas também proporciona uma visualização gráfica. Estamos comprometidos em oferecer uma experiência integrada e acessível no vasto campo da Internet das Coisas.
+
+## Como Navegar por Este Repositório:
+
+- Consulte o README para obter instruções detalhadas sobre a configuração e execução do projeto.
+
+- Explore o código-fonte para compreender a implementação e personalização possíveis.
+
+### Instruções:
 
 ## Instalação do Node-RED:
 
