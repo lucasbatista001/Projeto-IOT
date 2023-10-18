@@ -1,0 +1,383 @@
+[
+    {
+        "id": "6991618a6d369a6f",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "93b2cf17913eb7a7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.mqttdashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "34ea321949bd2a9d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0033cc",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0033cc",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0033cc",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1a53ff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0033cc",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial Black,Arial Black,Gadget,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "60c05d723a98c8a2",
+        "type": "ui_tab",
+        "name": "dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "738bf2fcce66eb0e",
+        "type": "ui_group",
+        "name": "Gráficos",
+        "tab": "60c05d723a98c8a2",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "315989cc89fb80c6",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "nodeiot",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "6497658365120175",
+        "type": "ui_spacer",
+        "z": "6991618a6d369a6f",
+        "name": "spacer",
+        "group": "738bf2fcce66eb0e",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a9e00038d70a4d93",
+        "type": "mqtt in",
+        "z": "6991618a6d369a6f",
+        "name": "",
+        "topic": "wokwi-motion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "93b2cf17913eb7a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "438c5f32dfe8bfb5",
+                "9e4fbd419b4cd9f1",
+                "61c27186118780d5",
+                "d6cb8fee9462b94f"
+            ]
+        ]
+    },
+    {
+        "id": "438c5f32dfe8bfb5",
+        "type": "debug",
+        "z": "6991618a6d369a6f",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9e4fbd419b4cd9f1",
+        "type": "function",
+        "z": "6991618a6d369a6f",
+        "name": "function 1",
+        "func": "// Extrair o número de pessoas do objeto JSON\nvar match = msg.payload.match(/Count: (\\d+)/);\nif (match) {\n    var numeroDePessoas = parseInt(match[1], 10);\n    // Configurar a mensagem para inserção no banco de dados\n    msg.topic = \"INSERT INTO dados_movimento (data, movimento) VALUES (CURDATE(), \" + numeroDePessoas + \")\";\n    // Se quiser logar a instrução SQL no console para depuração\n    console.log(msg.topic);\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "823c32b672b05c1e",
+                "438c5f32dfe8bfb5"
+            ]
+        ]
+    },
+    {
+        "id": "823c32b672b05c1e",
+        "type": "mysql",
+        "z": "6991618a6d369a6f",
+        "mydb": "315989cc89fb80c6",
+        "name": "",
+        "x": 740,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7df9447df2e49ef9",
+        "type": "ui_gauge",
+        "z": "6991618a6d369a6f",
+        "name": "",
+        "group": "738bf2fcce66eb0e",
+        "order": 1,
+        "width": "12",
+        "height": "6",
+        "gtype": "gage",
+        "title": "Numero De Pessoas",
+        "label": "Clientes",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ff0000",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 500,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "61c27186118780d5",
+        "type": "function",
+        "z": "6991618a6d369a6f",
+        "name": "function 2",
+        "func": "// Inicializa a contagem ao iniciar o fluxo\nif (context.get('motion_count') === undefined) {\n    context.set('motion_count', 0);\n}\n\n// Verifica se a mensagem contém \"Motion Detected\"\nif (msg.payload.includes(\"Motion Detected\")) {\n    // Incrementa a contagem\n    context.set('motion_count', context.get('motion_count') + 1);\n}\n\n// Atualiza a mensagem com a contagem\nmsg.payload = context.get('motion_count');\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "7df9447df2e49ef9"
+            ]
+        ]
+    },
+    {
+        "id": "d6cb8fee9462b94f",
+        "type": "function",
+        "z": "6991618a6d369a6f",
+        "name": "function 3",
+        "func": "// Inicializa a contagem ao iniciar o fluxo\nif (context.get('motion_count') === undefined) {\n    context.set('motion_count', 0);\n}\n\n// Verifica se a mensagem contém \"Motion Detected\"\nif (msg.payload.includes(\"Motion Detected\")) {\n    // Incrementa a contagem\n    context.set('motion_count', context.get('motion_count') + 1);\n}\n\n// Atualiza a mensagem com a contagem\nmsg.topic = \"Contagem de Movimentos\";\nmsg.payload = context.get('motion_count');\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "fed83f11f75311e0",
+                "bc7f31f222363efb"
+            ]
+        ]
+    },
+    {
+        "id": "fed83f11f75311e0",
+        "type": "debug",
+        "z": "6991618a6d369a6f",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "bc7f31f222363efb",
+        "type": "ui_chart",
+        "z": "6991618a6d369a6f",
+        "name": "",
+        "group": "738bf2fcce66eb0e",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "label": "Quantidade de clientes por hora",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 530,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    }
+]
