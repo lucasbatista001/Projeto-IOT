@@ -60,7 +60,13 @@ Certifique-se de ter o Node-RED instalado em seu ambiente. Se ainda não tiver, 
 1. Certifique-se de configurar corretamente as credenciais e ajustar as configurações no Node-RED.
 
 2. Para informações detalhadas sobre a configuração e personalização, consulte a documentação incluída neste repositório.
+     [https://docs.wokwi.com/pt-BR/](https://docs.wokwi.com/pt-BR/)
+     [https://docs.wokwi.com/pt-BR/guides/esp32](https://docs.wokwi.com/pt-BR/guides/esp32)
+     [https://docs.wokwi.com/pt-BR/parts/wokwi-pir-motion-sensor](https://docs.wokwi.com/pt-BR/parts/wokwi-pir-motion-sensor)
+     [https://youtu.be/aklFhoKry_0?si=7p6w8o3WAw-1ht46](https://youtu.be/aklFhoKry_0?si=7p6w8o3WAw-1ht46)
+     [https://nodered.org](https://nodered.org)
+     [https://nodered.org/docs/getting-started/local](https://nodered.org/docs/getting-started/local)
 
-3. Simulação deve ser feita no [https://wokwi.com/micropython](https://wokwi.com/micropython).
+4. Simulação deve ser feita no [https://wokwi.com/micropython](https://wokwi.com/micropython).
 
    
