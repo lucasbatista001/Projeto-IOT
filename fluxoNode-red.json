@@ -45,14 +45,14 @@
             "name": "theme-light",
             "lightTheme": {
                 "default": "#0094CE",
-                "baseColor": "#0033cc",
+                "baseColor": "#002aff",
                 "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
                 "edited": true,
                 "reset": false
             },
             "darkTheme": {
                 "default": "#097479",
-                "baseColor": "#097479",
+                "baseColor": "#001eff",
                 "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
                 "edited": true,
                 "reset": false
@@ -67,11 +67,11 @@
             "themeState": {
                 "base-color": {
                     "default": "#0094CE",
-                    "value": "#0033cc",
+                    "value": "#002aff",
                     "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#0033cc",
+                    "value": "#002aff",
                     "edited": false
                 },
                 "page-backgroundColor": {
@@ -83,7 +83,7 @@
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#1a53ff",
+                    "value": "#4d6aff",
                     "edited": false
                 },
                 "group-borderColor": {
@@ -99,7 +99,7 @@
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#0033cc",
+                    "value": "#002aff",
                     "edited": false
                 },
                 "widget-borderColor": {
@@ -140,7 +140,7 @@
     {
         "id": "60c05d723a98c8a2",
         "type": "ui_tab",
-        "name": "dashboard",
+        "name": "Dashboard",
         "icon": "dashboard",
         "order": 1,
         "disabled": false,
@@ -190,12 +190,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 110,
-        "y": 220,
+        "x": 90,
+        "y": 60,
         "wires": [
             [
                 "438c5f32dfe8bfb5",
-                "9e4fbd419b4cd9f1",
                 "61c27186118780d5",
                 "d6cb8fee9462b94f"
             ]
@@ -214,42 +213,9 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 140,
+        "x": 420,
+        "y": 60,
         "wires": []
-    },
-    {
-        "id": "9e4fbd419b4cd9f1",
-        "type": "function",
-        "z": "6991618a6d369a6f",
-        "name": "function 1",
-        "func": "// Extrair o número de pessoas do objeto JSON\nvar match = msg.payload.match(/Count: (\\d+)/);\nif (match) {\n    var numeroDePessoas = parseInt(match[1], 10);\n    // Configurar a mensagem para inserção no banco de dados\n    msg.topic = \"INSERT INTO dados_movimento (data, movimento) VALUES (CURDATE(), \" + numeroDePessoas + \")\";\n    // Se quiser logar a instrução SQL no console para depuração\n    console.log(msg.topic);\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 300,
-        "y": 160,
-        "wires": [
-            [
-                "823c32b672b05c1e",
-                "438c5f32dfe8bfb5"
-            ]
-        ]
-    },
-    {
-        "id": "823c32b672b05c1e",
-        "type": "mysql",
-        "z": "6991618a6d369a6f",
-        "mydb": "315989cc89fb80c6",
-        "name": "",
-        "x": 740,
-        "y": 80,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "7df9447df2e49ef9",
@@ -275,8 +241,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 500,
-        "y": 220,
+        "x": 460,
+        "y": 100,
         "wires": []
     },
     {
@@ -291,8 +257,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 220,
+        "x": 260,
+        "y": 100,
         "wires": [
             [
                 "7df9447df2e49ef9"
@@ -311,8 +277,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 280,
+        "x": 260,
+        "y": 140,
         "wires": [
             [
                 "fed83f11f75311e0",
@@ -332,8 +298,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 760,
-        "y": 280,
+        "x": 600,
+        "y": 60,
         "wires": []
     },
     {
@@ -374,8 +340,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 530,
-        "y": 280,
+        "x": 490,
+        "y": 140,
         "wires": [
             []
         ]
